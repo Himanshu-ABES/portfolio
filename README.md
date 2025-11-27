@@ -2,7 +2,7 @@
 
 A modern, responsive, and high-performance personal portfolio website built to showcase my skills, projects, and experience as a Web Developer and Data Science student.
 
-> **Live Demo:** [Insert your Vercel deployment link here after deploying]
+> **Live Demo:** [https://portfolio-mauve-two-80.vercel.app/]
 
 
 ## ✨ Features
