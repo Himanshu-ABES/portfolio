@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import avatar from "./assets/avatar.jpg";
 
 function App() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -32,10 +33,15 @@ function App() {
 
             {/* Logo */}
             <a
-              href="#"
-              className="font-display font-bold text-xl tracking-tight z-10 hover:opacity-80 transition-opacity"
+              href="#home"
+              className="flex items-center gap-3 font-display font-bold text-xl tracking-tight z-10 hover:opacity-80 transition-opacity"
             >
-              Himanshu Chauhan
+              <img
+                src={avatar}
+                alt="Himanshu Chauhan"
+                className="w-9 h-9 rounded-full border border-white/20 object-cover"
+              />
+              <span>Himanshu Chauhan</span>
             </a>
 
             {/* Desktop Menu */}
@@ -264,7 +270,7 @@ function App() {
             {/* Photo / Stack Card */}
             <div className="lg:col-span-4 glass-card rounded-3xl p-2 min-h-[300px] relative overflow-hidden group">
               <img
-                src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop"
+                src={avatar}
                 alt="Coding Setup"
                 className="w-full h-full object-cover rounded-2xl opacity-60 group-hover:opacity-80 transition-opacity duration-500"
               />
