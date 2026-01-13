@@ -118,24 +118,26 @@ export default function About() {
               alt="Himanshu Chauhan"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-            <div className="absolute bottom-6 left-6 right-6">
-              <div className="bg-white/90 dark:bg-dark-surface/90 backdrop-blur-sm rounded-2xl p-4 border border-light-border dark:border-dark-border">
-                <div className="flex items-center gap-2 mb-3">
-                  <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-                  <span className="text-xs font-medium text-light-text-secondary dark:text-dark-text-secondary uppercase tracking-wider">
-                    Current Stack
-                  </span>
-                </div>
-                <div className="flex flex-wrap gap-2">
-                  {["React", "Node.js", "Tailwind", "Python"].map((tech) => (
-                    <span
-                      key={tech}
-                      className="px-3 py-1.5 bg-light-surface dark:bg-dark-bg rounded-full text-xs font-medium text-light-text dark:text-dark-text border border-light-border dark:border-dark-border"
-                    >
-                      {tech}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+            <div className="absolute bottom-3 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-4">
+              <div className="bg-white/90 dark:bg-dark-surface/90 backdrop-blur-sm rounded-xl p-2.5 sm:p-3 border border-light-border dark:border-dark-border">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-1.5">
+                    <div className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
+                    <span className="text-[10px] sm:text-xs font-medium text-light-text-secondary dark:text-dark-text-secondary uppercase tracking-wider">
+                      Stack
                     </span>
-                  ))}
+                  </div>
+                  <div className="flex flex-wrap gap-1 sm:gap-1.5 justify-end">
+                    {["React", "Node.js", "Tailwind", "Python"].map((tech) => (
+                      <span
+                        key={tech}
+                        className="px-1.5 py-0.5 sm:px-2 sm:py-1 bg-light-surface dark:bg-dark-bg rounded-full text-[10px] sm:text-xs font-medium text-light-text dark:text-dark-text border border-light-border dark:border-dark-border"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
