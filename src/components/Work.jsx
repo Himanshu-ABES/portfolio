@@ -36,7 +36,7 @@ export default function Work() {
       tags: ["React", "Supabase", "Zustand", "Tailwind"],
       gradient: "from-yellow-400 to-green-600",
       image: "/projects/easyBasket.jfif",
-      link: "https://github.com/Himanshu-ABES/quickBasket",
+      link: "https://quick-basket-chi.vercel.app/",
       fitImage: true,
     },
     {
@@ -46,7 +46,8 @@ export default function Work() {
       tags: ["React", "Three.js", "GSAP", "Tailwind"],
       gradient: "from-zinc-800 to-black",
       image: "/projects/apple-clone.jpeg",
-      link: "https://apple-clone-hazel-chi.vercel.app/",
+      link: "https://app-iphone.netlify.app/",
+      fitImage: true,
     },
     {
       title: "K72 Website Clone",
@@ -56,6 +57,7 @@ export default function Work() {
       gradient: "from-lime-400 to-black",
       image: "/projects/k72-clone.jpeg",
       link: "https://k27-website-clone-project.vercel.app/",
+      fitImage: true,
     },
     {
       title: "Edvyn - Education Platform",
@@ -64,7 +66,7 @@ export default function Work() {
       tags: ["HTML", "CSS", "JavaScript", "GSAP"],
       gradient: "from-green-500 to-black",
       image: "/projects/edvyn.jpeg",
-      link: "https://edvyn.vercel.app/",
+      link: "https://himanshu-abes.github.io/Edvyn/",
       fitImage: true,
     },
   ];
