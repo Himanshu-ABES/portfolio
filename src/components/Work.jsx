@@ -30,40 +30,42 @@ export default function Work() {
 
   const projects = [
     {
-      title: "Amazon Clone",
+      title: "easyBasket - 10 Mins Delivery",
       description:
-        "A full-stack e-commerce simulation with cart functionality and payment integration.",
-      tags: ["React", "Firebase", "Stripe"],
-      gradient: "from-orange-500 to-yellow-500",
-      image: null,
-      link: "#",
+        "A full-stack Blinkit-style grocery delivery app with Zustand state management, real-time cart updates, and Supabase backend for auth & database.",
+      tags: ["React", "Supabase", "Zustand", "Tailwind"],
+      gradient: "from-yellow-400 to-green-600",
+      image: "/projects/easyBasket.jfif",
+      link: "https://github.com/Himanshu-ABES/quickBasket",
+      fitImage: true,
     },
     {
-      title: "Weather Forecasting App",
+      title: "Apple iPhone 15 Clone",
       description:
-        "Real-time weather data visualization using OpenWeatherMap API with location-based forecasts.",
-      tags: ["JavaScript", "API", "CSS"],
-      gradient: "from-blue-500 to-cyan-500",
-      image: null,
-      link: "#",
+        "A modern iPhone 15 inspired website featuring Three.js 3D models, GSAP animations, and stunning visual effects with interactive elements.",
+      tags: ["React", "Three.js", "GSAP", "Tailwind"],
+      gradient: "from-zinc-800 to-black",
+      image: "/projects/apple-clone.jpeg",
+      link: "https://apple-clone-hazel-chi.vercel.app/",
     },
     {
-      title: "Uber Clone",
+      title: "K72 Website Clone",
       description:
-        "A ride-sharing application prototype with real-time location tracking and fare estimation.",
-      tags: ["React Native", "Node.js", "Maps API"],
-      gradient: "from-gray-800 to-gray-900",
-      image: null,
-      link: "#",
+        "A fully responsive clone of K72.ca featuring smooth GSAP animations, Framer Motion effects, and modern UI/UX design across 3 pages.",
+      tags: ["React", "GSAP", "Framer Motion", "Tailwind"],
+      gradient: "from-lime-400 to-black",
+      image: "/projects/k72-clone.jpeg",
+      link: "https://k27-website-clone-project.vercel.app/",
     },
     {
-      title: "Portfolio Website",
+      title: "Edvyn - Education Platform",
       description:
-        "This portfolio website built with React, GSAP animations, and Tailwind CSS.",
-      tags: ["React", "GSAP", "Tailwind"],
-      gradient: "from-purple-500 to-pink-500",
-      image: null,
-      link: "#",
+        "An educational platform website with modern gradient design, GSAP animations, and multiple course pages for practical learning.",
+      tags: ["HTML", "CSS", "JavaScript", "GSAP"],
+      gradient: "from-green-500 to-black",
+      image: "/projects/edvyn.jpeg",
+      link: "https://edvyn.vercel.app/",
+      fitImage: true,
     },
   ];
 
@@ -94,7 +96,7 @@ export default function Work() {
           </div>
 
           <motion.a
-            href="https://github.com/Himanshu-ABES"
+            href="https://github.com/Himanshu-ABES?tab=repositories"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-6 py-3 border border-light-border dark:border-dark-border rounded-full text-sm font-medium text-light-text dark:text-dark-text hover:bg-light-surface dark:hover:bg-dark-surface transition-colors"
@@ -139,7 +141,7 @@ export default function Work() {
                   className={`aspect-[16/10] bg-gradient-to-br ${project.gradient} relative overflow-hidden`}
                 >
                   {/* Mockup Browser Window */}
-                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[85%] h-[85%] bg-white dark:bg-dark-surface rounded-xl shadow-2xl overflow-hidden group-hover:scale-105 transition-transform duration-700">
+                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[95%] h-[95%] bg-white dark:bg-dark-surface rounded-xl shadow-2xl overflow-hidden group-hover:scale-105 transition-transform duration-700">
                     {/* Browser Bar */}
                     <div className="h-8 bg-light-surface dark:bg-dark-bg border-b border-light-border dark:border-dark-border flex items-center px-4 gap-2">
                       <div className="w-3 h-3 rounded-full bg-red-400" />
@@ -150,15 +152,25 @@ export default function Work() {
                       </div>
                     </div>
 
-                    {/* Content Placeholder */}
-                    <div className="p-4 space-y-3">
-                      <div className="h-4 bg-light-surface dark:bg-dark-bg rounded w-1/3" />
-                      <div className="grid grid-cols-2 gap-3">
-                        <div className="h-20 bg-light-surface dark:bg-dark-bg rounded" />
-                        <div className="h-20 bg-light-surface dark:bg-dark-bg rounded" />
+                    {/* Project Screenshot */}
+                    {project.image ? (
+                      <div className="relative w-full h-[calc(100%-2rem)] overflow-hidden">
+                        <img
+                          src={project.image}
+                          alt={project.title}
+                          className={`w-full h-full ${project.fitImage ? "object-contain bg-white dark:bg-dark-surface" : "object-cover object-top"}`}
+                        />
                       </div>
-                      <div className="h-4 bg-light-surface dark:bg-dark-bg rounded w-2/3" />
-                    </div>
+                    ) : (
+                      <div className="p-4 space-y-3">
+                        <div className="h-4 bg-light-surface dark:bg-dark-bg rounded w-1/3" />
+                        <div className="grid grid-cols-2 gap-3">
+                          <div className="h-20 bg-light-surface dark:bg-dark-bg rounded" />
+                          <div className="h-20 bg-light-surface dark:bg-dark-bg rounded" />
+                        </div>
+                        <div className="h-4 bg-light-surface dark:bg-dark-bg rounded w-2/3" />
+                      </div>
+                    )}
 
                     {/* Hover Overlay */}
                     <div className="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
