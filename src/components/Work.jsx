@@ -36,7 +36,7 @@ export default function Work() {
       tags: ["React", "Supabase", "Zustand", "Tailwind"],
       gradient: "from-yellow-400 to-green-600",
       image: "/projects/easyBasket.jfif",
-      link: "https://quick-basket-chi.vercel.app/",
+      link: "https://quick-basket-woad.vercel.app/",
       fitImage: true,
     },
     {
